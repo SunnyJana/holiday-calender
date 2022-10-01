@@ -19,7 +19,7 @@ export class HolidayService {
    * Use the URL 'api/cities'
    */
   getCities(): Observable<any> {
-    return null;
+    return http.get(`https://holiday-cal-backend.herokuapp.com/cities`);
   }
 
 
@@ -31,7 +31,7 @@ export class HolidayService {
    * Use the URL 'api/monthly'
    */
   getHolidays(city: string, monthIndex: number, year: number): Observable<any> {
-    return null;
+    return http.get(`https://holiday-cal-backend.herokuapp.com/cities&city=${city}&monthIndex=${monthIndex}&year=${year}`);
   }
 
   
