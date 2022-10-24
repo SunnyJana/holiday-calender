@@ -11,12 +11,12 @@
                 <!-- 
                     On click should call navigationArrowMonth
                 -->
-                <button mat-icon-button id="leftMonthKey" aria-label="left naviage" >
+                <button mat-icon-button id="leftMonthKey" aria-label="right naviage" >
                     <mat-icon>keyboard_arrow_left
                     </mat-icon>
                 </button>
 
-                <div id="monthValue" class="nameArrage" style="width: 120px;">
+                <div id="monthValue" class="nameArrage" style="width: 150px;">
                     <!-- 
                         Display month in Alphabets
                     -->
@@ -49,11 +49,6 @@
                      -->
                    
                 </div>
-
-                <!-- 
-                    On click should call navigationArrowYear
-                    disable when limit reached
-                -->
                 <button id="rightYearKey" mat-icon-button aria-label="right naviage"   >
                     <mat-icon>keyboard_arrow_right
                     </mat-icon>
@@ -64,21 +59,12 @@
             </div>
             <div class="flex">
                 <div class='select-container'>
-                    <!--
-                        On select city the object should be assigned to 'selectedCity'
-
-                    -->
+                    <div class="selector_active">
                     <mat-form-field [style.fontSize.px]="12" class='selector_city' appearance="outline">
-                        <!--
-                                Add mat select here.
-                                mat-select should contain id as "cityDropDown"
-                                The selected city should be assigned to "selectedCity" variable 
-                            -->
                         <mat-select id="cityDropDown" placeholder="Select" >
-
-
                         </mat-select>
                     </mat-form-field>
+                  </div>
                 </div>
 
             </div>
